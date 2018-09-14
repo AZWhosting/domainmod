@@ -47,6 +47,23 @@
       </span>
 
       <div class="navbar-custom-menu">
+
+<!-- Select language -->
+        <ul class="nav navbar-nav">
+         <li class="user-footer">
+                <div class="form-group" style="padding-top:10px;">
+                  <form method="post" action="">
+                  <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" name="lang" onchange="this.form.submit();">
+                    <option><?= __("Choose a Language...") ?></option>
+                    <?php foreach ($languages as $key=>$l) { ?>
+                      <option value="<?= $key ?>"><?= $l ?></option>
+                    <?php } ?>
+                  </select>
+                </div>
+          </li>
+        </ul>
+      <!-- End Select language -->
+        
         <ul class="nav navbar-nav">
           <!-- Messages: style can be found in dropdown.less-->
 <?php /* ?>
