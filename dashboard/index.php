@@ -53,7 +53,7 @@ $pdo = $deeb->cnxx;
 ?>
 <div class="row">
 
-    <h3 style="padding-left:20px;">System Totals</h3>
+    <h3 style="padding-left:20px;"><?= __("System Totals") ?></h3>
 
     <?php
     //////////////////////////////////////////////////
@@ -63,8 +63,9 @@ $pdo = $deeb->cnxx;
         SELECT count(*)
         FROM domains
         WHERE active NOT IN ('0', '10')")->fetchColumn();
+    $trans = sprintf(ngettext("Domain","Domains",$total_count),$total_count);
+    echo $dashboard->displayPanel($trans, $total_count, 'green', 'checkmark-circled', '/domains/index.php?is_active=LIVE');
 
-    echo $dashboard->displayPanel('Domains', $total_count, 'green', 'checkmark-circled', '/domains/index.php?is_active=LIVE');
 
     //////////////////////////////////////////////////
     // Active SSL Certificates
@@ -74,7 +75,7 @@ $pdo = $deeb->cnxx;
         FROM ssl_certs
         WHERE active NOT IN ('0', '10')")->fetchColumn();
 
-    echo $dashboard->displayPanel('SSL Certificates', $total_count, 'green', 'checkmark-circled', '/ssl/index.php?is_active=LIVE');
+    echo $dashboard->displayPanel(__('SSL Certificates'), $total_count, 'green', 'checkmark-circled', '/ssl/index.php?is_active=LIVE');
 
     //////////////////////////////////////////////////
     // Sold Domains
@@ -86,7 +87,7 @@ $pdo = $deeb->cnxx;
 
     if ($total_count) {
 
-        echo $dashboard->displayPanel('Sold Domains', $total_count, 'aqua', 'android-cart', '/domains/index.php?is_active=10');
+        echo $dashboard->displayPanel(__('Sold Domains'), $total_count, 'aqua', 'android-cart', '/domains/index.php?is_active=10');
 
     } ?>
 
@@ -121,7 +122,7 @@ if ($total_count_domains || $total_count_ssl) { ?>
 
     <div class="row">
 
-        <h3 style="padding-left:20px;">Expiring in the next <?php echo $expiration_days; ?> days</h3>
+        <h3 style="padding-left:20px;"><?= __("Expiring in the next ") .$expiration_days.  __(" days") ?></h3>
 
         <?php
         //////////////////////////////////////////////////
@@ -135,7 +136,7 @@ if ($total_count_domains || $total_count_ssl) { ?>
 
         if ($total_count) {
 
-            echo $dashboard->displayPanel('Domains', $total_count, 'red', 'close-circled', '/domains/index.php?daterange=' . urlencode($daterange));
+            echo $dashboard->displayPanel(__("Domains"), $total_count, 'red', 'close-circled', '/domains/index.php?daterange=' . urlencode($daterange));
 
         }
 

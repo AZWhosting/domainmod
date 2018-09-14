@@ -63,92 +63,8 @@
           </li>
         </ul>
       <!-- End Select language -->
-        
+
         <ul class="nav navbar-nav">
-          <!-- Messages: style can be found in dropdown.less-->
-<?php /* ?>
-          <li class="dropdown messages-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-envelope-o"></i>
-              <span class="label label-success">4</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 4 messages</li>
-              <li>
-                <!-- inner menu: contains the actual data -->
-                <ul class="menu">
-                  <li><!-- start message -->
-                    <a href="#">
-                      <div class="pull-left">
-                        <!img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Support Team
-                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <!-- end message -->
-                </ul>
-              </li>
-              <li class="footer"><a href="#">See All Messages</a></li>
-            </ul>
-          </li>
-          <!-- Notifications: style can be found in dropdown.less -->
-          <li class="dropdown notifications-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-bell-o"></i>
-              <span class="label label-warning">10</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 10 notifications</li>
-              <li>
-                <!-- inner menu: contains the actual data -->
-                <ul class="menu">
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="footer"><a href="#">View all</a></li>
-            </ul>
-          </li>
-          <!-- Tasks: style can be found in dropdown.less -->
-          <li class="dropdown tasks-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-flag-o"></i>
-              <span class="label label-danger">9</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 9 tasks</li>
-              <li>
-                <!-- inner menu: contains the actual data -->
-                <ul class="menu">
-                  <li><!-- Task item -->
-                    <a href="#">
-                      <h3>
-                        Design some buttons
-                        <small class="pull-right">20%</small>
-                      </h3>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">20% Complete</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <!-- end task item -->
-                </ul>
-              </li>
-              <li class="footer">
-                <a href="#">View all tasks</a>
-              </li>
-            </ul>
-          </li>
-<?php */ ?>
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -162,55 +78,31 @@
                 <!img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                    <?php echo $_SESSION['s_first_name'] . " "; ?> <?php echo $_SESSION['s_last_name']; ?><BR>
+                    <?php echo $_SESSION['s_first_name'] . " "; ?>
+                    <?php echo $_SESSION['s_last_name']; ?><BR>
                     <?php echo $_SESSION['s_email_address']; ?><BR><BR>
                     <small>
-                        Currency: <?php echo $_SESSION['s_default_currency']; ?><BR>
-                        Time Zone: <?php echo $_SESSION['s_default_timezone']; ?><BR>
-                        Expiration Emails: <?php
+                        <?= __("Currency") ?>: <?php echo $_SESSION['s_default_currency']; ?><BR>
+                        <?= __("Time Zone") ?>: <?php echo $_SESSION['s_default_timezone']; ?><BR>
+                        <?= __("Expiration Emails") ?>: <?php
                         if ($_SESSION['s_expiration_emails'] == '1') {
-                            echo "Yes";
+                            echo __("Yes");
                         } else {
-                            echo "No";
+                            echo __("No");
                         } ?>
                     </small>
                 </p>
               </li>
-<?php /* ?>
-              <!-- Menu Body -->
-              <li class="user-body">
-                <div class="row">
-                  <div class="col-xs-4 text-center">
-                    <a href="#">Followers</a>
-                  </div>
-                  <div class="col-xs-4 text-center">
-                    <a href="#">Sales</a>
-                  </div>
-                  <div class="col-xs-4 text-center">
-                    <a href="#">Friends</a>
-                  </div>
-                </div>
-                <!-- /.row -->
-              </li>
-              <!-- Menu Footer-->
-<?php */ ?>
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="<?php echo $web_root; ?>/settings/profile/" class="btn btn-default btn-flat">User Profile</a>&nbsp;&nbsp;
+                  <a href="<?php echo $web_root; ?>/settings/profile/" class="btn btn-default btn-flat"><?= __("User") ?> Profile</a>&nbsp;&nbsp;
                 </div>
                 <div class="pull-right">
-                  <a href="<?php echo $web_root; ?>/logout.php" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="<?php echo $web_root; ?>/logout.php" class="btn btn-default btn-flat"><?= __("Sign out") ?></a>
                 </div>
               </li>
             </ul>
           </li>
-
-<?php /* ?>
-          <!-- Control Sidebar Toggle Button -->
-          <li>
-            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-          </li>
-<?php */ ?>
         </ul>
       </div>
     </nav>
@@ -223,21 +115,10 @@
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
       <!-- Sidebar user panel -->
-<?php /* ?>
-      <div class="user-panel">
-        <div class="pull-left image">
-          <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-        </div>
-        <div class="pull-left info">
-          <p>Alexander Pierce</p>
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-        </div>
-      </div>
-<?php */ ?>
       <!-- search form -->
       <form action="<?php echo $web_root; ?>/domains/index.php" method="get" class="sidebar-form">
         <div class="input-group">
-          <input type="text" name="search_for" class="form-control" placeholder="Domain Keyword Search"<?php if ($search_for && $search_for != '') echo ' value="' . $search_for . '"'; ?>>
+          <input type="text" name="search_for" class="form-control" placeholder="<?= __("Domain Keyword Search") ?>"<?php if ($search_for && $search_for != '') echo ' value="' . $search_for . '"'; ?>>
               <span class="input-group-btn">
                 <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
                 </button>
@@ -274,12 +155,6 @@
           </span>
           <BR>
 
-<?php /* ?>
-      <h1>
-        <?php echo $page_title; ?>
-      </h1>
-<?php */ ?>
-
         <?php
         if ($_SESSION['s_message_danger'] != "") {
             echo $system->showMessageDanger($_SESSION['s_message_danger']);
@@ -301,19 +176,8 @@
 
       <!-- Default box -->
       <div class="box box-solid box-danger">
-<?php /* ?>
         <div class="box-header with-border">
-          <h3 class="box-title">Title</h3>
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
-              <i class="fa fa-minus"></i></button>
-            <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
-              <i class="fa fa-times"></i></button>
-          </div>
-        </div>
-<?php */ ?>
-        <div class="box-header with-border">
-            <h3 class="box-title"><?php echo $page_title; ?></h3>
+            <h3 class="box-title"><?= __($page_title) ?></h3>
             <?php if ($software_section_logo != '') { ?>
                 <span class="pull-right"><i class="fa <?php echo $software_section_logo; ?>"></i></span>
             <?php } ?>

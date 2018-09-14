@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: domainmod\n"
-"POT-Creation-Date: 2018-09-13 23:39+0200\n"
-"PO-Revision-Date: 2018-09-14 00:12+0200\n"
+"POT-Creation-Date: 2018-09-14 20:33+0200\n"
+"PO-Revision-Date: 2018-09-14 21:02+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -11,91 +11,240 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.1.1\n"
 "X-Poedit-Basepath: ../../..\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-KeywordsList: _\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: GetText/examples/pigs_dropin.php:77
-msgid ""
-"This is how the story goes.\n"
-"\n"
-msgstr ""
-"Voilà comment l’histoire se passe.\n"
-"\n"
+#: _includes/layout/header.inc.php:57
+msgid "Choose a Language..."
+msgstr "Choisir une langue..."
 
-#: admin/index.php:48
-msgid "System Settings"
-msgstr "Parametres du systeme"
+#: _includes/layout/header.inc.php:85
+msgid "Currency"
+msgstr "Devise"
 
-#: admin/index.php:49
-msgid "System Defaults"
-msgstr "Paramètres par défaut du système"
+#: _includes/layout/header.inc.php:86
+msgid "Time Zone"
+msgstr "Fuseau horaire"
 
-#: admin/index.php:50
-msgid "Users"
-msgstr "Utilisateurs"
+#: _includes/layout/header.inc.php:87
+msgid "Expiration Emails"
+msgstr "Expiration Emails"
 
-#: admin/index.php:51
-msgid "Custom Domain Fields"
-msgstr "Champs de domaine personnalisé"
+#: _includes/layout/header.inc.php:89
+msgid "Yes"
+msgstr "Oui"
 
-#: admin/index.php:52
-msgid "Custom SSL Fields"
-msgstr "Champs personnalisés SSL"
+#: _includes/layout/header.inc.php:91
+msgid "No"
+msgstr "Non"
 
-#: admin/index.php:53
-msgid "Task Scheduler"
-msgstr "Planificateur de tâches"
+#: _includes/layout/header.inc.php:98
+msgid "User"
+msgstr "Utilisateur"
 
-#: admin/index.php:54
-msgid "Maintenance"
-msgstr "Maintenance"
+#: _includes/layout/header.inc.php:101
+msgid "Sign out"
+msgstr "Déconnexion"
 
-#: admin/index.php:55
-msgid "System Information"
-msgstr "Information Système"
+#: _includes/layout/header.inc.php:121
+msgid "Domain Keyword Search"
+msgstr "Recherche par mots clés"
 
-#: dashboard/index.php:67
-msgid "Expiring in the next"
-msgstr "Expirant dans le prochain"
+#: _includes/layout/menu-main.inc.php:23
+msgid "NAVIGATION"
+msgstr "NAVIGATION"
 
-#: dashboard/index.php:67
-msgid "days"
-msgstr "jours"
+#: _includes/layout/menu-main.inc.php:24
+#: _includes/settings/dashboard-main.inc.php:23
+#: _includes/settings/dashboard-main.inc.php:24
+msgid "Dashboard"
+msgstr "Tableau de bord"
 
-#: dashboard/index.php:91 dashboard/index.php:196 dashboard/index.php:262
+#: _includes/layout/menu-main.inc.php:26 dashboard/index.php:139
 msgid "Domains"
 msgstr "Domaines"
 
-#: dashboard/index.php:126 dashboard/index.php:221
+#: _includes/layout/menu-main.inc.php:29
+#, fuzzy
+msgid "Queue"
+msgstr "File"
+
+#: _includes/layout/menu-main.inc.php:32 dashboard/index.php:78
 msgid "SSL Certificates"
 msgstr "Certificats SSL"
 
-#: dashboard/index.php:168
-msgid "Domains in Queue"
-msgstr "Domaines dans la file d’attente"
+#: _includes/layout/menu-main.inc.php:33
+msgid "Assets"
+msgstr "Actif"
 
-#: dashboard/index.php:245
+#: _includes/layout/menu-main.inc.php:34
+msgid "Segments"
+msgstr "Segments"
+
+#: _includes/layout/menu-main.inc.php:38
+msgid "Bulk Updater"
+msgstr "Mise à jour en vrac"
+
+#: _includes/layout/menu-main.inc.php:42
+msgid "Reporting"
+msgstr "Rapport"
+
+#: _includes/layout/menu-main.inc.php:45
+msgid "Data Warehouse"
+msgstr "Entrepôt de données"
+
+#: _includes/layout/menu-main.inc.php:50
+msgid "Settings"
+msgstr "Parametres"
+
+#: _includes/layout/menu-main.inc.php:54
+msgid "Display Settings"
+msgstr "Paramètres d'affichage"
+
+#: _includes/layout/menu-main.inc.php:55
+msgid "User Defaults"
+msgstr "Utilisateur par défaut"
+
+#: _includes/layout/menu-main.inc.php:56
+msgid "User Profile"
+msgstr "Profil Utilisateur"
+
+#: _includes/layout/menu-main.inc.php:57
+msgid "Change Password"
+msgstr "Changer Mot de passe"
+
+#: _includes/layout/menu-main.inc.php:65 _includes/layout/menu-main.inc.php:91
+msgid "Maintenance"
+msgstr "Maintenance"
+
+#: _includes/layout/menu-main.inc.php:69
+msgid "Update Conversion Rates"
+msgstr "Mettre à jour les taux de conversion"
+
+#: _includes/layout/menu-main.inc.php:70
+#, fuzzy
+msgid "Update Domain Fees"
+msgstr "Mis à jour Frais de nom de domaine"
+
+#: _includes/layout/menu-main.inc.php:71
+msgid "Update SSL Fees"
+msgstr "Mis à jour des frais SSL"
+
+#: _includes/layout/menu-main.inc.php:81
+msgid "Administration"
+msgstr "Administration"
+
+#: _includes/layout/menu-main.inc.php:85
+msgid "System Settings"
+msgstr "Parametres du systeme"
+
+#: _includes/layout/menu-main.inc.php:86
+msgid "System Defaults"
+msgstr "Paramètres par défaut du système"
+
+#: _includes/layout/menu-main.inc.php:87
+msgid "Users"
+msgstr "Utilisateurs"
+
+#: _includes/layout/menu-main.inc.php:88
+msgid "Custom Domain Fields"
+msgstr "Champs de domaine personnalisé"
+
+#: _includes/layout/menu-main.inc.php:89
+msgid "Custom SSL Fields"
+msgstr "Champs personnalisés SSL"
+
+#: _includes/layout/menu-main.inc.php:90
+msgid "Task Scheduler"
+msgstr "Planificateur de tâches"
+
+#: _includes/layout/menu-main.inc.php:92
+msgid "Debug Log"
+msgstr "Debug Log"
+
+#: _includes/layout/menu-main.inc.php:93
+msgid "System Information"
+msgstr "Information Système"
+
+#: _includes/layout/menu-main.inc.php:99
+msgid "HELP"
+msgstr "AIDE"
+
+#: _includes/layout/menu-main.inc.php:100
+msgid "Documentation"
+msgstr "Documentation"
+
+#: _includes/layout/menu-main.inc.php:101
+msgid "Support"
+msgstr "Support"
+
+#: _includes/layout/menu-main.inc.php:102
+msgid "News"
+msgstr "Nouvelles"
+
+#: _includes/layout/menu-main.inc.php:103
+msgid "Contribute"
+msgstr "Contribution"
+
+#: dashboard/index.php:56
+#, fuzzy
+msgid "System Totals"
+msgstr "Total Système"
+
+#: dashboard/index.php:66
+#, php-format
+msgid "Domain"
+msgid_plural "Domains"
+msgstr[0] "Domaine"
+msgstr[1] "Domaines"
+
+#: dashboard/index.php:90
 msgid "Sold Domains"
 msgstr "Domaines vendus"
 
-#: dashboard/index.php:278 dashboard/index.php:387
-msgid "Pending Renewals"
-msgstr "Renouvellements en attente"
+#: dashboard/index.php:125
+msgid "Expiring in the next "
+msgstr "Expirant dans le prochain "
 
-#: dashboard/index.php:305 dashboard/index.php:414
-msgid "Pending Registrations"
-msgstr "Inscriptions en attente"
+#: dashboard/index.php:125
+msgid " days"
+msgstr "jours"
 
-#: dashboard/index.php:330
-msgid "Pending Transfers"
-msgstr "Transferts en attente"
+#: localization/localization.php:40
+#, php-format
+msgid "%d Comment"
+msgid_plural "%d Comments"
+msgstr[0] "%d Commentaire"
+msgstr[1] "%d Commentaires"
 
-#: dashboard/index.php:356 dashboard/index.php:440
-msgid "Pending (Other)"
-msgstr "En attente (Autre)"
+#~ msgid "Domain.."
+#~ msgid_plural "Domains.."
+#~ msgstr[0] "Domains"
+#~ msgstr[1] "Domaines"
 
-#: dashboard/index.php
-msgid "Dashboard"
-msgstr "Tableau de bord"
+#~ msgid "Domains in Queue"
+#~ msgstr "Domaines dans la file d’attente"
+
+#~ msgid "Pending Renewals"
+#~ msgstr "Renouvellements en attente"
+
+#~ msgid "Pending Transfers"
+#~ msgstr "Transferts en attente"
+
+#~ msgid "Pending (Other)"
+#~ msgstr "En attente (Autre)"
+
+#~ msgid "Hello World"
+#~ msgstr "Bonjour le Monde"
+
+#~ msgid "My name is"
+#~ msgstr "Mon nom est"
+
+#~ msgid ""
+#~ "This is how the story goes.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Voilà comment l’histoire se passe.\n"
+#~ "\n"

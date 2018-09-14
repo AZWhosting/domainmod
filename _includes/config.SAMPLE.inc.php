@@ -31,7 +31,6 @@ $dbpassword = 'dbPassword123';
 
 // Language available
 $languages = array(
-		"en_US" => "En",
-		"fr_FR" => "Fr",
-		
+		"en_US" => "English",
+		"fr_FR" => "French",	
 );

@@ -27,11 +27,19 @@ T_bindtextdomain($domain, LOCALE_DIR);
 T_bind_textdomain_codeset($domain, $encoding);
 T_textdomain($domain);
 
+// Function Plural
+
+
 ?>
 <?php
+ //Test plural
+ $count=1;
+//echo sprintf(ngettext("%d Comment","%d Comments",$count),$count);
+
+
 /*echo"</br>";
 echo"</br>";
 echo __("Users");
 echo"</br>";
 var_dump($_SESSION['lang']);*/
-?>
+
