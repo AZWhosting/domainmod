@@ -28,3 +28,10 @@ $dbhostname = 'localhost';
 $dbname = 'db_name';
 $dbusername = 'db_username';
 $dbpassword = 'dbPassword123';
+
+// Language available
+$languages = array(
+		"en_US" => "En",
+		"fr_FR" => "Fr",
+		
+);
