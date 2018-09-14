@@ -1,0 +1,101 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: domainmod\n"
+"POT-Creation-Date: 2018-09-13 23:39+0200\n"
+"PO-Revision-Date: 2018-09-14 00:12+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: _\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: GetText/examples/pigs_dropin.php:77
+msgid ""
+"This is how the story goes.\n"
+"\n"
+msgstr ""
+"Voilà comment l’histoire se passe.\n"
+"\n"
+
+#: admin/index.php:48
+msgid "System Settings"
+msgstr "Parametres du systeme"
+
+#: admin/index.php:49
+msgid "System Defaults"
+msgstr "Paramètres par défaut du système"
+
+#: admin/index.php:50
+msgid "Users"
+msgstr "Utilisateurs"
+
+#: admin/index.php:51
+msgid "Custom Domain Fields"
+msgstr "Champs de domaine personnalisé"
+
+#: admin/index.php:52
+msgid "Custom SSL Fields"
+msgstr "Champs personnalisés SSL"
+
+#: admin/index.php:53
+msgid "Task Scheduler"
+msgstr "Planificateur de tâches"
+
+#: admin/index.php:54
+msgid "Maintenance"
+msgstr "Maintenance"
+
+#: admin/index.php:55
+msgid "System Information"
+msgstr "Information Système"
+
+#: dashboard/index.php:67
+msgid "Expiring in the next"
+msgstr "Expirant dans le prochain"
+
+#: dashboard/index.php:67
+msgid "days"
+msgstr "jours"
+
+#: dashboard/index.php:91 dashboard/index.php:196 dashboard/index.php:262
+msgid "Domains"
+msgstr "Domaines"
+
+#: dashboard/index.php:126 dashboard/index.php:221
+msgid "SSL Certificates"
+msgstr "Certificats SSL"
+
+#: dashboard/index.php:168
+msgid "Domains in Queue"
+msgstr "Domaines dans la file d’attente"
+
+#: dashboard/index.php:245
+msgid "Sold Domains"
+msgstr "Domaines vendus"
+
+#: dashboard/index.php:278 dashboard/index.php:387
+msgid "Pending Renewals"
+msgstr "Renouvellements en attente"
+
+#: dashboard/index.php:305 dashboard/index.php:414
+msgid "Pending Registrations"
+msgstr "Inscriptions en attente"
+
+#: dashboard/index.php:330
+msgid "Pending Transfers"
+msgstr "Transferts en attente"
+
+#: dashboard/index.php:356 dashboard/index.php:440
+msgid "Pending (Other)"
+msgstr "En attente (Autre)"
+
+#: dashboard/index.php
+msgid "Dashboard"
+msgstr "Tableau de bord"
