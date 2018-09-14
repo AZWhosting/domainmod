@@ -20,4 +20,5 @@
  */
 ?>
 <?php
+require_once(DIR_ROOT . "/localization/localization.php");
 header('Content-Type: text/html; charset=utf-8');
